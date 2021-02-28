@@ -1,15 +1,22 @@
+<img align="left" width="125" height="125" src="https://github.com/ruberVulpes/ProtestPi/blob/main/readme/protest-pi-logo-500.png?raw=true" alt="Protest Pi Logo">
+
 # ProtestPi
 
-A local [Rocket.Chat](https://rocket.chat/) server without need for an internet connection.
+A [Rocket.Chat](https://rocket.chat/) server hosteed on a [Raspberry Pi](https://www.raspberrypi.org/) availble only to those on a local WiFi hosted on the Raspberry Pi. No need for an internet connection.
+
+</br>
 
 ## Motivation 
 
 The motivation behind this project was to provide people at protests or other civil unrest activites a way to locally communicate with eachother using their smart phones or other WiFi capable devices without needing to be connected to the internet. This can provide peace of mind for communication or serve as a workaround where the local internet is down or disrupted.
 
+## Support Me 
+
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate?hosted_button_id=U65R5REYQXAR8)
+
 ## Prerequisites
 
-* A Raspberry Pi with Wifi
-  * Save yourself the headache and get one that has the WiFi built in
+* A Raspberry Pi model with built in WiFi 
   * I used a Raspberry Pi 4 2GB for developing and testing this guide
 * A Micro SD card with the RaspberryPi OS loaded
   * This guide could also likely work with other flavors as well, they're just not tested
@@ -32,5 +39,15 @@ The motivation behind this project was to provide people at protests or other ci
   * `sudo snap install rocketchat-server`
 7. Setup the Raspberry Pi as a routed wireless access point
   * [Raspberry PI Offical Guide](https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md)
+  * Make sure to update the `ssid` and the `wpa_passphrase` to something more fitting and more secret respectively
 
-You should now be able to connect a WiFi device to your Raspberry Pi wireless access point. Navigating to `http://localhost:3000` or `http://192.168.4.1` will bring you to the Rocket.Chat server and allow you to register accounts. Dummy values can be used for the email addresses. 
+You should now be able to connect a WiFi device to your Raspberry Pi wireless access point. Navigating to `http://localhost:3000` or `http://192.168.4.1` will bring you to the Rocket.Chat server and allow you to register accounts. Dummy values can be used for the email addresses. The first User registerd will serve as the Admin. 
+
+## Future Work 
+
+* Automation of the Setup/Installation
+  * I want the setup to be as easy as possible
+* SSL/Domain name for the Rocket.Chat instance
+* Would like to test extending the Raspberry PI's WiFi via an external Access Point connected via Ethernet
+* Many User testing would be cool to see what real world performance would be like 
+
