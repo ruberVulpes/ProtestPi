@@ -44,7 +44,7 @@ This can provide peace of mind for communication or serve as a workaround where 
    * Make sure to update the `ssid` and the `wpa_passphrase` to something more fitting and more secret respectively
 
 You should now be able to connect a WiFi device to your Raspberry Pi wireless access point. 
-Navigating to `http://localhost:3000` or `http://192.168.4.1` will bring you to the Rocket.Chat server and allow you to register accounts. 
+Navigating to `http://localhost:3000` or `http://192.168.4.1:3000` will bring you to the Rocket.Chat server and allow you to register accounts. 
 Dummy values can be used for the email addresses. 
 The first User registered will serve as the server Admin. 
 
