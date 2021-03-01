@@ -31,7 +31,7 @@ Do not hesitate to [open an issue](https://github.com/ruberVulpes/ProtestPi/issu
   * This guide could also likely work with other flavors as well, they're just not tested
 * A power source for the Raspberry Pi
   * Wall plug or battery
-* A host machine to set up the PI via SSH or a keyboard/mouse and a display for the Raspberry Pi to set it up
+* A host machine to set up the Raspberry Pi remotely or a keyboard/mouse and a display for the Raspberry Pi to set it up locally
 
 ## Installation
 
