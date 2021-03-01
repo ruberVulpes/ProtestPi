@@ -12,9 +12,16 @@ A [Rocket.Chat](https://rocket.chat/) server hosted on a [Raspberry Pi](https://
 The motivation behind this project was to provide people at protests or other civil unrest activities a way to locally communicate with another using their smartphones or other WiFi capable devices without needing to be connected to the internet. 
 This can provide peace of mind for communication or serve as a workaround where the local internet is down or disrupted.
 
+There is additional motivation to make the setup of this project as easy to install and run for anyone. 
+This is meant to serve as a way to provide access to non-technical people from utilizing this project.
+
 ## Support Me 
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate?hosted_button_id=U65R5REYQXAR8)
+
+## Contact Me
+
+Do not hesitate to [open an issue](https://github.com/ruberVulpes/ProtestPi/issues/new) on this repo or shoot me an email to the account listed under my [GitHub profile](https://github.com/ruberVulpes).
 
 ## Prerequisites
 
@@ -24,10 +31,13 @@ This can provide peace of mind for communication or serve as a workaround where 
   * This guide could also likely work with other flavors as well, they're just not tested
 * A power source for the Raspberry Pi
   * Wall plug or battery
-* A host machine to set up the PI via SSH or a Keyboard/Mouse and a display for the Raspberry Pi to set it up
+* A host machine to set up the PI via SSH or a keyboard/mouse and a display for the Raspberry Pi to set it up
 
 ## Installation
 
+1. Connect to your Raspberry Pi
+   * [Raspberry Pi Remote Access Guides](https://www.raspberrypi.org/documentation/remote-access/)
+   * [Setting up your Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up)
 1. Package Manager Update and Upgrade
     * `sudo apt update -y && sudo apt upgrade -y`
 1. Reboot the Raspberry Pi
@@ -47,6 +57,10 @@ This can provide peace of mind for communication or serve as a workaround where 
         * This is optional and will default to `US`
 1. Reboot the Raspberry Pi
     * `sudo shutdown -r now`
+1. Done!
+    * The Rocket.Chat server and WiFi will now start everytime the Raspberry Pi is powered on
+        * The Rocket.Chat server may take a minute to be usable after startup
+
 
 You should now be able to connect a WiFi device to your Raspberry Pi's wireless access point. 
 Once connected navigate to `http://192.168.4.1:3000` to get to the Rocket.Chat server.
@@ -66,7 +80,7 @@ The script is also idempotent and should be able to be run multiple times withou
 ## Future Work 
 
 * Adjust `install.sh` to allow a User to update the SSID/Password on subsequent runs
-* SSL/Domain name for the Rocket.Chat instance
-* Would like to test extending the Raspberry PI's WiFi via an external Access Point connected via Ethernet
-* Many User testing would be cool to see what real world performance would be like 
+* Add SSL/Domain name for the Rocket.Chat instance
+* I would like to test extending the Raspberry PI's WiFi via an external Access Point connected via Ethernet
+* Testing the project with many Users would be cool to see what real world performance would be like
 
