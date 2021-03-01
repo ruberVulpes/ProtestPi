@@ -29,29 +29,31 @@ This can provide peace of mind for communication or serve as a workaround where 
 ## Installation
 
 1. Package Manager Update and Upgrade
-   * `sudo apt update -y && sudo apt upgrade -y`
-2. Reboot the Raspberry Pi
-   * `sudo systemctl reboot`
-   * If you don't reboot now your network setup **will** fail
-3. Set Environment Variable to skip Rocket.Chat Setup Wizard
-   * `sudo sh -c 'echo OVERWRITE_SETTING_Show_Setup_Wizard=completed >> /etc/environment'`
-4. Install Snap
-   * `sudo apt install snapd -y`
-5. Install Rocket.Chat
-   * `sudo snap install rocketchat-server`
-7. Set up the Raspberry Pi as a routed wireless access point
-   * [Raspberry PI Official Guide](https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md)
-   * Make sure to update the `ssid` and the `wpa_passphrase` to something more fitting and more secret respectively
+    * `sudo apt update -y && sudo apt upgrade -y`
+1. Reboot the Raspberry Pi
+    * `sudo shutdown -r now`
+    * If you don't reboot now your network setup **will** fail
+1. Clone this Repository
+    * `git clone git@github.com:ruberVulpes/ProtestPi.git`
+1. Navigate to the source directory 
+    * `cd ProtestPi`
+1. Start the installation script
+    * `sudo sh install.sh -p <Password for the WiFi network>`
+    * You can use the `-s` flag to customize the SSID of the network
+        * This is optional and will default to `PiBroadcast`
+    * You can use the `-l` flag to change the [Country Code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the network
+        * This is optional and will default to `US`
+1. Reboot the Raspberry Pi
+    * `sudo shutdown -r now`
 
-You should now be able to connect a WiFi device to your Raspberry Pi wireless access point. 
+You should now be able to connect a WiFi device to your Raspberry Pi's wireless access point. 
 Navigating to `http://localhost:3000` or `http://192.168.4.1:3000` will bring you to the Rocket.Chat server and allow you to register accounts. 
 Dummy values can be used for the email addresses. 
 The first User registered will serve as the server Admin. 
 
 ## Future Work 
 
-* Automation of the Setup/Installation
-  * I want the setup to be as easy as possible
+* Adjust `install.sh` to allow a User to update the SSID/Password on subsequent runs
 * SSL/Domain name for the Rocket.Chat instance
 * Would like to test extending the Raspberry PI's WiFi via an external Access Point connected via Ethernet
 * Many User testing would be cool to see what real world performance would be like 
