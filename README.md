@@ -67,7 +67,10 @@ Once connected navigate to `http://192.168.4.1:3000` to get to the Rocket.Chat s
 From here anyone with access should be able to register accounts, dummy values can be used for the email addresses. 
 The first User registered will serve as the server Admin. 
 
-![Rocket Chat Login Example](readme/rocket-chat-login.png)
+<!-- ![Rocket Chat Login Example](readme/rocket-chat-login.png) -->
+<p align="center">
+  <img align="center" src="readme/rocket-chat-login.png" alt="Rocket Chat Login Example">
+</p>
 
 
 ## Installation Script Details
