@@ -39,6 +39,8 @@ This can provide peace of mind for communication or serve as a workaround where 
     * `cd ProtestPi`
 1. Start the installation script
     * `sudo sh install.sh -p <Password for the WiFi network>`
+      * Make the password something secure but easy to communicate 
+        * The password should be between 8 and 64 characters in length
     * You can use the `-s` flag to customize the SSID of the network
         * This is optional and will default to `PiBroadcast`
     * You can use the `-l` flag to change the [Country Code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) for the network
@@ -47,9 +49,19 @@ This can provide peace of mind for communication or serve as a workaround where 
     * `sudo shutdown -r now`
 
 You should now be able to connect a WiFi device to your Raspberry Pi's wireless access point. 
-Navigating to `http://localhost:3000` or `http://192.168.4.1:3000` will bring you to the Rocket.Chat server and allow you to register accounts. 
-Dummy values can be used for the email addresses. 
+Once connected navigate to `http://192.168.4.1:3000` to get to the Rocket.Chat server.
+From here anyone with access should be able to register accounts, dummy values can be used for the email addresses. 
 The first User registered will serve as the server Admin. 
+
+![Rocket Chat Login Example](readme/rocket-chat-login.png)
+
+
+## Installation Script Details
+The installation script automates the installation of Rocket.Chat and setting up the local WiFi network following the guides below.
+The script is also idempotent and should be able to be run multiple times without breaking.
+
+* [Rocket.Chat installation](https://docs.rocket.chat/installation/snaps)
+* [Raspberry Pi as a routed wireless access point](https://www.raspberrypi.org/documentation/configuration/wireless/access-point-routed.md)
 
 ## Future Work 
 
