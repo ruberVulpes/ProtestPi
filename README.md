@@ -1,5 +1,5 @@
 <!--suppress HtmlDeprecatedAttribute -->
-<img align="left" width="125" height="125" src="https://github.com/ruberVulpes/ProtestPi/blob/main/readme/protest-pi-logo-500.png?raw=true" alt="Protest Pi Logo">
+<img align="left" width="125" height="125" src="https://raw.githubusercontent.com/ruberVulpes/ProtestPi/main/readme/protest-pi-logo-500.png" alt="Protest Pi Logo">
 
 # ProtestPi
 
@@ -68,7 +68,7 @@ From here anyone with access should be able to register accounts, dummy values c
 The first User registered will serve as the server Admin. 
 
 <p align="center">
-  <img align="center" src="readme/rocket-chat-login.png" alt="Rocket Chat Login Example">
+  <img align="center" src="https://raw.githubusercontent.com/ruberVulpes/ProtestPi/main/readme/rocket-chat-login.png" alt="Rocket Chat Login Example">
 </p>
 
 
