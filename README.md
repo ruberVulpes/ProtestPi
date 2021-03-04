@@ -26,7 +26,7 @@ Do not hesitate to [open an issue](https://github.com/ruberVulpes/ProtestPi/issu
 ## Prerequisites
 
 * A Raspberry Pi model with built in WiFi 
-  * I used a Raspberry Pi 4 2 GB for developing and testing this guide
+  * I used a Raspberry Pi 4 for developing and testing this guide
 * A Micro SD card with the RaspberryPi OS loaded
   * This guide could also likely work with other flavors as well, they're just not tested
 * A power source for the Raspberry Pi
@@ -44,7 +44,7 @@ Do not hesitate to [open an issue](https://github.com/ruberVulpes/ProtestPi/issu
     * `sudo shutdown -r now`
     * If you don't reboot now your network setup **will** fail
 1. Clone this Repository
-    * `git clone git@github.com:ruberVulpes/ProtestPi.git`
+    * `git clone https://github.com/ruberVulpes/ProtestPi.git`
 1. Navigate to the source directory 
     * `cd ProtestPi`
 1. Start the installation script
@@ -81,7 +81,6 @@ The script is also idempotent and should be able to be run multiple times withou
 
 ## Future Work 
 
-* Adjust `install.sh` to allow a User to update the SSID/Password on subsequent runs
 * Add SSL/Domain name for the Rocket.Chat instance
 * I would like to test extending the Raspberry PI's WiFi via an external Access Point connected via Ethernet
 * Testing the project with many Users would be cool to see what real world performance would be like
