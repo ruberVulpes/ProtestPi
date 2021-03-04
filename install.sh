@@ -153,7 +153,10 @@ sudo rfkill unblock wlan
 
 # Configure the access point software
 if cat /etc/hostapd/hostapd.conf  | grep -q wlan0 ; then
-  echo "Skipping AP configuration, already completed"
+  echo "AP already configured, updating password/ssid/country_code if changed"
+  sed -i "s/\bcountry_code=\w*/country_code=$LOCAL/" /etc/hostapd/hostapd.conf
+  sed -i "s/\bssid=\w*/ssid=$SSID/" /etc/hostapd/hostapd.conf
+  sed -i "s/\bwpa_passphrase=\w*/wpa_passphrase=$PASSWORD/" /etc/hostapd/hostapd.conf
 else
   sudo sh -c "echo country_code=$LOCAL >> /etc/hostapd/hostapd.conf"
   sudo sh -c 'echo interface=wlan0 >> /etc/hostapd/hostapd.conf'
