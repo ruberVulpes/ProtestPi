@@ -26,7 +26,7 @@ Do not hesitate to [open an issue](https://github.com/ruberVulpes/ProtestPi/issu
 ## Prerequisites
 
 * A Raspberry Pi model with built in WiFi 
-  * I used a Raspberry Pi 4 2 GB for developing and testing this guide
+  * I used a Raspberry Pi 4 for developing and testing this guide
 * A Micro SD card with the RaspberryPi OS loaded
   * This guide could also likely work with other flavors as well, they're just not tested
 * A power source for the Raspberry Pi
