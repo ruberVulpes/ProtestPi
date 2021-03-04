@@ -81,7 +81,6 @@ The script is also idempotent and should be able to be run multiple times withou
 
 ## Future Work 
 
-* Adjust `install.sh` to allow a User to update the SSID/Password on subsequent runs
 * Add SSL/Domain name for the Rocket.Chat instance
 * I would like to test extending the Raspberry PI's WiFi via an external Access Point connected via Ethernet
 * Testing the project with many Users would be cool to see what real world performance would be like
