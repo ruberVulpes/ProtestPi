@@ -44,7 +44,7 @@ Do not hesitate to [open an issue](https://github.com/ruberVulpes/ProtestPi/issu
     * `sudo shutdown -r now`
     * If you don't reboot now your network setup **will** fail
 1. Clone this Repository
-    * `git clone git@github.com:ruberVulpes/ProtestPi.git`
+    * `git clone https://github.com/ruberVulpes/ProtestPi.git`
 1. Navigate to the source directory 
     * `cd ProtestPi`
 1. Start the installation script
